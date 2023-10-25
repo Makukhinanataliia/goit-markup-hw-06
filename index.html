@@ -20,14 +20,20 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <!--------- Header ---------->
   </head>
   <body>
-<!--     <header class="header">
+    <header class="header">
       <div class="container header-container">
         <nav class="header-navigation">
           <a class="header-logo" href="./index.html">
             WEB<span class="header-logo-black">Studio</span></a
           >
+          <div class="icon-menu">
+            <svg width="24" height="24">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </div>
           <ul class="menu-list">
             <li class="header-menu">
               <a class="header-menu-link now" href="./index.html">Studio</a>
@@ -41,7 +47,7 @@
           </ul>
         </nav>
         <address class="adress">
-          <ul class="menu-list">
+          <ul class="menu-list-adress">
             <li class="adress-menu-item">
               <a class="adress-menu-link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
@@ -55,16 +61,87 @@
           </ul>
         </address>
       </div>
-    </header> -->
+    </header>
+    <div class="backdrop">
+      <div class="mobile-menu">
+        <button type="button" class="modal-menu-btn">
+          <svg class="modal-btn-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <nav class="mobile-menu-navigation">
+          <ul class="mobile-menu-list">
+            <li class="mobile-menu-list-item">
+              <a href="./index.html" class="mobile-menu-list-link now-menu"
+                >Studio</a
+              >
+            </li>
+            <li class="mobile-menu-list-item">
+              <a href="" class="mobile-menu-list-link">Portfolio</a>
+            </li>
+            <li class="mobile-menu-list-item">
+              <a href="" class="mobile-menu-list-link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="address">
+          <ul class="mobile-menu-list-adress">
+            <li class="mobile-menu-address-item">
+              <a href="tel:+110001111111" class="mobile-menu-address-link"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="mobile-menu-address-item">
+              <a
+                href="mailto:info@devstudio.com"
+                class="mobile-menu-address-link"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+        <ul class="mobile-menu-icons">
+          <li class="mobile-menu-icon">
+            <a href="" class="mobile-menu-social-links">
+              <svg class="mobile-menu-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram-2"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu-icon">
+            <a href="" class="mobile-menu-social-links">
+              <svg class="mobile-menu-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu-icon">
+            <a href="" class="mobile-menu-social-links">
+              <svg class="mobile-menu-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu-icon">
+            <a href="" class="mobile-menu-social-links">
+              <svg class="mobile-menu-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin-1"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <main>
-      <!--Section 1-->
-<!--       <section class="business">
-        <div class="container">
+      <!-- Section 1 -->
+      <section class="business">
+        <div class="container wrapper-business">
           <h1 class="business-titel">Effective Solutions for Your Business</h1>
           <button type="button" class="business-btn">Order Service</button>
         </div>
-      </section> -->
-      <!--Section 2-->
+      </section>
+      <!----Section 2------>
       <section class="strength">
         <div class="container">
           <h2 class="visually-hidden">Our Strength</h2>
@@ -121,7 +198,7 @@
         </div>
       </section>
       <!--Section 3-->
-<!--       <section class="team">
+      <!-- <section class="team">
         <div class="container team-container">
           <h2 class="team-titel">Our Team</h2>
           <ul class="team-list">
@@ -297,7 +374,7 @@
         </div>
       </section> -->
       <!--Section 4-->
-<!--       <section class="portfolio">
+      <!--       <section class="portfolio">
         <div class="container portfolio-container">
           <h2 class="portfolio-item">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -420,7 +497,7 @@
       </section> -->
     </main>
     <!--Footer-->
-<!--     <footer class="footer-container">
+    <!--     <footer class="footer-container">
       <div class="container">
         <div class="footer-container-logo">
           <a class="footer-logo" href="./index.html">
@@ -486,7 +563,7 @@
         </div>
       </div>
     </footer> -->
-<!--     <div class="backdrop is-open">
+        <div class="backdrop is-open">
       <div class="modal">
         <button type="button" class="modal-btn">
           <svg class="modal-btn-icon" width="8" height="8">
@@ -554,6 +631,7 @@
               value="true"
               class="check-input visually-hidden"
             />
+            <div class="check-tik">
             <label for="user-privacy" class="check-text">
               <span class="span"
                 ><svg class="modal-chek-icon" width="10" height="8">
@@ -562,10 +640,11 @@
               I accept the terms and conditions of the
               <a class="modal-check-link">Privacy Policy</a></label
             >
+            </div>
           </div>
           <button class="input-btn" type="submit">Send</button>
         </form>
       </div>
-    </div> -->
+    </div>
   </body>
 </html>
