@@ -1002,9 +1002,11 @@ fill:#2e2f42;
   display:flex;
   justify-content:space-between;
 }
+
 .header-menu-link {
 display:block;
 }
+
 .adress{
     display: flex;
     justify-content: flex-end;
@@ -1016,6 +1018,16 @@ display:block;
     line-height: 1.6;
 }
 
+.modal {
+  flex-flow: column;
+  width:408px;
+  min-height:584px;
+  padding: 72px 25px 24px 23px;
+}
+.check-text {
+  display: flex;
+  max-width:360px;
+}
 
 .business{
 max-width: 768px;
@@ -1066,6 +1078,10 @@ text-align: start;
     padding: 0 156px;
     max-width: 1158px;
   }
+
+.modal{
+padding: 72px 24px 24px 24px;
+}
 
   .strength-item {
     width: calc((100% - 72px) / 4);
