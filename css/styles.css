@@ -266,8 +266,10 @@ gap: 40px;
 padding:48px 0 40px 0;
 fill:#4D5AE5;
 }
+
 .mobile-menu-icon {
 }
+
 .mobile-menu-social-links {
   display: flex;
   align-items: center;
@@ -285,11 +287,10 @@ fill:#4D5AE5;
 .mobile-menu-social-links:active{
 background-color: #fff;
 fill:#2e2f42;
-
 }
 /*?---------------------------------------SECTION-1-BUISNESS-------------------------------*/
 
-.business {
+.business{
   display: block;
   background-color: #2a2a2a;
   background-image: linear-gradient(
@@ -297,33 +298,31 @@ fill:#2e2f42;
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/bg-mob.jpg);
+    url(../images/mob/bg-mob.jpg);
+  padding: 72px 16px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   max-width: 320px;
   max-height: 432px;
-  padding: 72px 16px;
   margin-left: auto;
   margin-right: auto;
 }
+
 
 .business-titel {
   color: #fff;
   font-size: 36px;
   font-weight: 700;
   line-height: 1.11;
-  /* line-height: 1.07; */
   letter-spacing: 0.02em;
   max-width: 288px;
-  /* max-width: 496px; */
   display: flex;
+  flex-wrap: wrap;
+  overflow-wrap: break-word;
   text-align: center;
   text-transform:capitalize;
-  /* margin-left: auto; */
-  /* margin-bottom: 48px; */
   margin-bottom: 72px;
-  /* margin-right: auto; */
 }
 
 .business-btn {
@@ -982,8 +981,6 @@ fill:#2e2f42;
 @media screen and (min-width: 768px) {
   .container {
     max-width: 100%;
-    display: flex;
-    
   }
 
   .mobile-menu{
@@ -1050,7 +1047,7 @@ background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/busines-bg-tab.jpeg);
+    url(../images/tab/bg-tab.jpg);
     padding: 112px 136px;
 }
 
@@ -1061,15 +1058,14 @@ background-image: linear-gradient(
 }
 
 .business-titel{
-  display:contents;
+display:contents;
 font-size: 56px;
 text-transform:none;
 line-height:1.07em;
-margin-bottom: 36px;
 }
 
 .business-btn{
-  margin-top:36px;
+    margin:36px auto;
 }
 
 .strength-list {
@@ -1088,8 +1084,7 @@ text-align: start;
 
 @media screen and (min-width: 1158px) {
   .container {
-    padding: 0 156px;
-    max-width: 100%;
+    max-width:100%
   }
 
 .modal{
@@ -1108,8 +1103,38 @@ padding: 72px 24px 24px 24px;
 margin-right:40px;
   }
 
+  .business{
+max-width:1440px;
+max-height: 600px; 
+background-image: linear-gradient(
+      to bottom,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/bg-desc.jpg);
+        padding: 188px 0;
+  }
+
+.wrapper-business{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+}
+
+.business-titel{
+font-size:56px;
+line-height:1.07;
+max-width:496px;
+display:block;
+margin-bottom:48px;
+}
+
+.business-btn{
+   margin: 0 auto;
+}
+
   .strength-item {
-    width: calc((100% - 72px) / 4);
+  width: calc((100% - 72px) / 4);
   }
 
   .strength-subtitle {
