@@ -1109,6 +1109,17 @@ padding: 0 108px;
   width: calc((100% - 24px) / 2);
 }
 
+.portfolio-container {
+width: 768px;
+}
+
+.portfolio-list{
+    gap:64px 24px;
+}
+.portfolio-list-item{
+  width: calc((100% - 24px) / 2); 
+}
+
 /*?---------------------------------------------Adaptation Desctop----------------------------------------*/
 
 @media screen and (min-width: 1158px) {
@@ -1208,11 +1219,12 @@ padding:0 16px;
 }
 
 .portfolio {
- padding:120px;
+ padding:120px 0;
 }
 
 .portfolio-container {
 width: 1158px;
+padding:0 16px;
 }
 
 .portfolio-list {
@@ -1229,4 +1241,5 @@ width: 1158px;
 .hidden-p {
   display:block;
 }
+
 }
