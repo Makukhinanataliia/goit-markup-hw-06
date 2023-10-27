@@ -1,9 +1,8 @@
 body {
   color: #434455;
   font-family: "Roboto", sans-serif;
-  body {
   overflow-x: hidden;
-  }
+
 }
 
 p,
@@ -1323,7 +1322,6 @@ justify-content: center;
 }
 
 .footer-text{
-  margin-top
   width:264px;
 }
 
