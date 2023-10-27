@@ -20,7 +20,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-    <!--------- Header ---------->
   </head>
   <body>
     <header class="header">
@@ -132,9 +131,7 @@
         </ul>
       </div>
     </div>
-
     <main>
-      <!-- Section 1 -->
       <section class="business">
         <div class="container wrapper-business">
           <h1 class="business-titel">
@@ -143,7 +140,6 @@
           <button type="button" class="business-btn">Order Service</button>
         </div>
       </section>
-      <!----Section 2------>
       <section class="strength">
         <div class="container strength-container">
           <h2 class="visually-hidden">Our Strength</h2>
@@ -199,14 +195,13 @@
           </ul>
         </div>
       </section>
-      <!-- Section 3 -->
       <section class="team">
         <div class="container team-container">
           <h2 class="team-titel">Our Team</h2>
           <ul class="team-list">
             <li class="team-item">
               <img
-                srcs="./images/team1.jpg 1x, ./images/team1-x2.jpg 2x"
+                srcset="./images/team1.jpg 1x, ./images/team1-x2.jpg 2x"
                 src="./images/team1.jpg"
                 alt="designer Mark Guerrero"
                 width="264"
@@ -249,7 +244,7 @@
             </li>
             <li class="team-item">
               <img
-                srcs="./images/team2.jpg 1x, ./images/team2-x2.jpg 2x"
+                srcset="./images/team2.jpg 1x, ./images/team2-x2.jpg 2x"
                 src="./images/team2.jpg"
                 alt="frontend Developer Tom Ford"
                 width="264"
@@ -292,7 +287,7 @@
             </li>
             <li class="team-item">
               <img
-                srcs="./images/team3.jpg 1x, ./images/team3-x2.jpg 2x"
+                srcset="./images/team3.jpg 1x, ./images/team3-x2.jpg 2x"
                 src="./images/team3.jpg"
                 alt="marketing Camila Garcia"
                 width="264"
@@ -335,7 +330,7 @@
             </li>
             <li class="team-item">
               <img
-                srcs="./images/team4.jpg 1x, ./images/team4-x2.jpg 2x"
+                srcset="./images/team4.jpg 1x, ./images/team4-x2.jpg 2x"
                 src="./images/team4.jpg"
                 alt="UI designer Daniel Wilson"
                 width="264"
@@ -379,7 +374,6 @@
           </ul>
         </div>
       </section>
-      <!-- Section 4 -->
       <section class="portfolio">
         <div class="container portfolio-container">
           <h2 class="portfolio-item">Our Portfolio</h2>
@@ -389,13 +383,22 @@
                 <picture>
                   <source
                     media="(max-width: 767px)"
-                    srcset="./images/mob/portfolio1-mob.jpg x1, ./images/mob/portfolio1-x2-mob.jpg x2" />
+                    srcset="
+                      ./images/mob/portfolio1-mob.jpg    1x,
+                      ./images/mob/portfolio1-x2-mob.jpg 2x
+                    " />
                   <source
                     media="(min-width: 768px) and (max-width: 1157px)"
-                    srcset="./images/tab/portfolio1-tab.jpg x1, ./images/tab/portfolio1-x2-tab.jpg x2" />
+                    srcset="
+                      ./images/tab/portfolio1-tab.jpg    1x,
+                      ./images/tab/portfolio1-x2-tab.jpg 2x
+                    " />
                   <source
                     media="(min-width: 1158px)"
-                    srcset="./images/portfolio1.jpg x1, ./images/portfolio1-x2.jpg" />
+                    srcset="
+                      ./images/portfolio1.jpg    1x,
+                      ./images/portfolio1-2x.jpg
+                    " />
                   <img
                     src="./images/portfolio1.jpg"
                     alt="Banking App"
@@ -418,13 +421,22 @@
                 <picture>
                   <source
                     media="(max-width: 767px)"
-                    srcset="./images/mob/portfolio2-mob.jpg x1, ./images/mob/portfolio2-x2-mob.jpg x2" />
+                    srcset="
+                      ./images/mob/portfolio2-mob.jpg    1x,
+                      ./images/mob/portfolio2-x2-mob.jpg 2x
+                    " />
                   <source
                     media="(min-width: 768px) and (max-width: 1157px)"
-                    srcset="./images/tab/portfolio2-tab.jpg x1, ./images/tab/portfolio2-x2-tab.jpg x2" />
+                    srcset="
+                      ./images/tab/portfolio2-tab.jpg    1x,
+                      ./images/tab/portfolio2-x2-tab.jpg 2x
+                    " />
                   <source
                     media="(min-width: 1158px)"
-                    srcset="./images/portfolio2.jpg x1, ./images/portfolio2-x2.jpg" />
+                    srcset="
+                      ./images/portfolio2.jpg    1x,
+                      ./images/portfolio2-2x.jpg
+                    " />
                   <img
                     src="./images/portfolio2.jpg"
                     alt="Cashless Payment"
@@ -447,13 +459,22 @@
                 <picture>
                   <source
                     media="(max-width: 767px)"
-                    srcset="./images/mob/portfolio3-mob.jpg x1, ./images/mob/portfolio3-x2-mob.jpg x2" />
+                    srcset="
+                      ./images/mob/portfolio3-mob.jpg    1x,
+                      ./images/mob/portfolio3-x2-mob.jpg 2x
+                    " />
                   <source
                     media="(min-width: 768px) and (max-width: 1157px)"
-                    srcset="./images/tab/portfolio3-tab.jpg x1, ./images/tab/portfolio3-x2-tab.jpg x2" />
+                    srcset="
+                      ./images/tab/portfolio3-tab.jpg    1x,
+                      ./images/tab/portfolio3-x2-tab.jpg 2x
+                    " />
                   <source
                     media="(min-width: 1158px)"
-                    srcset="./images/portfolio3.jpg x1, ./images/portfolio3-x2.jpg" />
+                    srcset="
+                      ./images/portfolio3.jpg    1x,
+                      ./images/portfolio3-2x.jpg
+                    " />
                   <img
                     src="./images/portfolio3.jpg"
                     alt="Meditation App"
@@ -476,13 +497,22 @@
                 <picture>
                   <source
                     media="(max-width: 767px)"
-                    srcset="./images/mob/portfolio4-mob.jpg x1, ./images/mob/portfolio4-x2-mob.jpg x2" />
+                    srcset="
+                      ./images/mob/portfolio4-mob.jpg    1x,
+                      ./images/mob/portfolio4-x2-mob.jpg 2x
+                    " />
                   <source
                     media="(min-width: 768px) and (max-width: 1157px)"
-                    srcset="./images/tab/portfolio4-tab.jpg x1, ./images/tab/portfolio4-x2-tab.jpg x2" />
+                    srcset="
+                      ./images/tab/portfolio4-tab.jpg    1x,
+                      ./images/tab/portfolio4-x2-tab.jpg 2x
+                    " />
                   <source
                     media="(min-width: 1158px)"
-                    srcset="./images/portfolio4.jpg x1, ./images/portfolio4-x2.jpg" />
+                    srcset="
+                      ./images/portfolio4.jpg    1x,
+                      ./images/portfolio4-2x.jpg
+                    " />
                   <img
                     src="./images/portfolio4.jpg"
                     alt="Taxi Service"
@@ -505,15 +535,24 @@
                 <picture>
                   <source
                     media="(max-width: 767px)"
-                    srcset="./images/mob/portfolio5-mob.jpg x1, ./images/mob/portfolio5-x2-mob.jpg x2"
+                    srcset="
+                      ./images/mob/portfolio5-mob.jpg    1x,
+                      ./images/mob/portfolio5-x2-mob.jpg 2x
+                    "
                   />
                   <source
                     media="(min-width: 768px) and (max-width: 1157px)"
-                    srcset="./images/tab/portfolio5-tab.jpg x1, ./images/tab/portfolio5-x2-tab.jpg x2"
+                    srcset="
+                      ./images/tab/portfolio5-tab.jpg    1x,
+                      ./images/tab/portfolio5-x2-tab.jpg 2x
+                    "
                   />
                   <source
                     media="(min-width: 1158px)"
-                    srcset="./images/portfolio5.jpg x1, ./images/portfolio5-x2.jpg"
+                    srcset="
+                      ./images/portfolio5.jpg    1x,
+                      ./images/portfolio5-2x.jpg
+                    "
                   />
                   <img
                     src="./images/portfolio5.jpg"
@@ -538,13 +577,22 @@
                 <picture>
                   <source
                     media="(max-width: 767px)"
-                    srcset="./images/mob/portfolio6-mob.jpg x1, ./images/mob/portfolio6-x2-mob.jpg x2" />
+                    srcset="
+                      ./images/mob/portfolio6-mob.jpg    1x,
+                      ./images/mob/portfolio6-x2-mob.jpg 2x
+                    " />
                   <source
                     media="(min-width: 768px) and (max-width: 1157px)"
-                    srcset="./images/tab/portfolio6-tab.jpg x1, ./images/tab/portfolio6-x2-tab.jpg x2" />
+                    srcset="
+                      ./images/tab/portfolio6-tab.jpg    1x,
+                      ./images/tab/portfolio6-x2-tab.jpg 2x
+                    " />
                   <source
                     media="(min-width: 1158px)"
-                    srcset="./images/portfolio6.jpg x1, ./images/portfolio6-x2.jpg" />
+                    srcset="
+                      ./images/portfolio6.jpg    1x,
+                      ./images/portfolio6-2x.jpg
+                    " />
                   <img
                     src="./images/portfolio6.jpg"
                     alt="Online Courses"
@@ -566,7 +614,6 @@
         </div>
       </section>
     </main>
-    <!----------Footer------------->
     <footer class="footer">
       <div class="container footer-container">
         <div class="footer-container-logo">
@@ -706,10 +753,8 @@
                   ><svg class="modal-chek-icon" width="10" height="8">
                     <use href="./images/icons.svg#icon-check"></use></svg
                 ></span>
-                <div class="wrap-check">
-                  I accept the terms and conditions of the
-                  <a class="modal-check-link">Privacy Policy</a>
-                </div>
+                I accept the terms and conditions of the
+                <a class="modal-check-link">Privacy Policy</a>
               </label>
             </div>
           </div>
